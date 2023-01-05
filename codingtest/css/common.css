@@ -1,0 +1,113 @@
+body {
+  font-family: "Pretendard Variable", sans-serif;
+  word-break: keep-all;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.wrap{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.page-title {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  letter-spacing: -5px;
+}
+.page-title span{
+  color: #FF0808;
+}
+.page-subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.wrap img{
+  display: block;
+  width: 500px;
+  margin-bottom: 30px;
+}
+.btn {
+  max-width: 480px;
+  height: 80px;
+  display: flex; /* <a>태그를 블럭과 유사한 요소로 만들기 */
+  border-radius: 70px;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: none; /* <a>태그 밑줄 없애기 */
+  cursor: pointer;
+  background-color: #FF5959;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: auto; /* 가운데 정렬하기 */
+  margin-right: auto; /* 가운데 정렬하기 */
+  transition: 0.3s; /* 애니메이션 전환 시간 설정 */
+}
+.btn-orange {
+  background-color: #FF5959;
+  box-shadow: 0 8px 0 #FF0808;
+  color: #FFFFFF;
+}
+.btn-orange:active {
+  box-shadow: 0 4px 0 #FF0808;
+  transform: translateY(10px);
+}
+.btn-green {
+  background-color: #32BFA1;
+  box-shadow: 0 8px 0 #299A82;
+  color: #FFFFFF;
+}
+.btn-green:active {
+  box-shadow: 0 4px 0 #299A82;;
+  transform: translateY(10px);
+}
+.btn-small {
+  max-width: 480px;
+  height: 70px;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.txt{
+  font-size: 20px; font-weight: 700;
+  color: gray;
+  margin-top: 60px;
+}
+
+@media (max-width: 700px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .page-title {
+    font-size: 60px;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+  }
+  .page-subtitle {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+  .btn {
+    font-size: 24px;
+  }
+  .wrap img{
+    display: block;
+    width: 350px;
+    margin-bottom: 50px;
+  }
+  .txt {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
