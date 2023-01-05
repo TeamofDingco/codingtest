@@ -4,7 +4,7 @@ body{
   background-color: #fff;
 }
 .progress{
-  max-width: 450px;
+  max-width: 480px;
   height: 20px;
   background-color: #CDD1D9;
   margin-left: auto;
@@ -17,7 +17,21 @@ body{
   background-color: #FF5959;
   border-radius: 10px;
   transition: 0.2s;
+  float: left;
 }
+.progress .value-img {
+  max-width: 480px;
+}
+.progress .value-img img {
+  display: inline-flex;
+  width: 10%;
+  height: 100%;
+  margin-top: -30px;
+  margin-left: -30px;
+} 
+/* 여기까지 progress-bar Fin. */
+
+
 .question-box{
   max-width: 500px;
   background-color: white;
@@ -54,12 +68,19 @@ body{
 
 @media (max-width: 700px) {
   body {
-    padding-top: 30px;
+    padding-top: 80px;
     margin-left: 20px;
     margin-right: 20px;
   }
   .progress{
     margin-bottom: 30px;
+  }
+  .progress .value-img img {
+    display: inline-flex;
+    width: 12%;
+    height: 100%;
+    margin-top: -20px;
+    margin-left: -15px;
   }
   .question-box .question {
     font-size: 32px;
@@ -82,5 +103,4 @@ body{
     border: 1px solid black; border-radius: 70px;
     display: block; margin: 0 auto 24px; line-height: 2;
   }
-
 }
